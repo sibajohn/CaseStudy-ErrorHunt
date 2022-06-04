@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const dotenv =require('dotenv');
 const Schema = mongoose.Schema;
 dotenv.config();
-mongoose.connect(process.env.MONGODD_URI,{useNewUrlParser:true,useUnifiedTopology:true});
+mongoose.connect(process.env.MONGODB_URI,{useNewUrlParser:true,useUnifiedTopology:true});
 
 const AuthorSchema = new Schema({
     title : String,
